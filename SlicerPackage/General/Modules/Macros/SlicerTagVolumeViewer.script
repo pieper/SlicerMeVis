@@ -1,0 +1,40 @@
+//----------------------------------------------------------------------------------
+//! Macro module SlicerTagVolumeViewer
+/*!
+// \file    SlicerTagVolumeViewer.script
+// \author  Florian Link
+// \date    2012-09-26
+//
+// 
+*/
+//----------------------------------------------------------------------------------
+
+
+Interface {
+  Inputs {}
+  Outputs {}
+  Parameters {}
+}
+
+
+Commands {
+  source = $(LOCAL)/SlicerTagVolumeViewer.py
+  runApplicationCommand = run
+  initCommand = init
+}
+
+Window {
+  style { derive = Panel.default }
+  maximized = Yes
+  Vertical { expandY = yes
+    margin = 8
+    Horizontal {
+      Viewer SoExaminerViewer.self { stretchX = 10 }
+      Vertical {
+        Panel { module = SoLUTEditor1 }
+        Panel { module = SoLUTEditor2 }
+      }
+    }
+    Viewer 2d.self { type = SoRenderArea }
+  }
+}

@@ -1,0 +1,19 @@
+//----------------------------------------------------------------------------------
+//! SlicerTagVolumeViewer module definition
+/*!
+// \file    SlicerTagVolumeViewer.def
+// \author  Florian Link
+// \date    2012-09-26
+*/
+//----------------------------------------------------------------------------------
+
+MacroModule SlicerTagVolumeViewer {
+  genre = ""
+  author = "Florian Link"
+  comment = ""
+  keywords = ""
+  seeAlso = ""
+   
+  externalDefinition = "$(LOCAL)/SlicerTagVolumeViewer.script"
+
+}

@@ -1,0 +1,8 @@
+
+Package {
+  packageGroup = "Slicer"
+  packageName  = "General"
+
+  owner = "Steve Pieper"
+  description = ""
+}

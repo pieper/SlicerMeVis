@@ -1,0 +1,827 @@
+// MDL v1 utf8
+network  {
+  watchlist = ""
+}
+module ChangeLUTColor {
+  internal  {
+    frame = "865 477 144 56"
+    moduleGroupName = "3D Rendering"
+    windows  {
+      window _default {
+        geometry = "855 555 302 132"
+        sizeHint = "209 132"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ChangeLUTColor3
+    visualType = AsInput
+    color = "0.917647058823529 0.250980392156863 0.0431372549019608"
+    intensity = 1
+    alpha = 1
+  }
+}
+module ChangeLUTColor {
+  internal  {
+    frame = "545 477 144 56"
+    moduleGroupName = "3D Rendering"
+    windows  {
+      window _default {
+        geometry = "855 555 302 132"
+        sizeHint = "209 132"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ChangeLUTColor2
+    visualType = AsInput
+    color = "0.443137254901961 0.572549019607843 0.0901960784313725"
+    intensity = 1
+    alpha = 1
+  }
+}
+module ChangeLUTColor {
+  internal  {
+    frame = "705 477 144 56"
+    moduleGroupName = "3D Rendering"
+    windows  {
+      window _default {
+        geometry = "855 555 302 132"
+        sizeHint = "209 132"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = ChangeLUTColor1
+    visualType = AsInput
+    color = "0.996078431372549 0.788235294117647 0.00392156862745098"
+    intensity = 1
+    alpha = 1
+  }
+}
+module SoGVRRayCastSettings {
+  internal  {
+    frame = "1129 461 176 56"
+    moduleGroupName = "3D Rendering"
+    windows  {
+      window _default {
+        geometry = "653 479 454 273"
+        sizeHint = "287 273"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoGVRRayCastSettings1
+    enabled = TRUE
+    closestVesselThreshold = 150
+    midaMixValue = 0
+    earlyRayTermination = 0.99000001
+    integrateOpaqueGeometry = FALSE
+    renderInteractiveToFBO = FALSE
+    renderMode = RayCast_Direct
+    jitterMode = RayCast_JitterOff
+  }
+}
+module SoGVRRayCastSettings {
+  internal  {
+    frame = "653 309 168 56"
+    moduleGroupName = "3D Rendering"
+    windows  {
+      window _default {
+        geometry = "653 479 484 313"
+        sizeHint = "310 313"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoGVRRayCastSettings
+    enabled = TRUE
+    closestVesselThreshold = 150
+    midaMixValue = 0
+    earlyRayTermination = 0.99000001
+    integrateOpaqueGeometry = FALSE
+    renderInteractiveToFBO = FALSE
+    renderMode = RayCast_Illuminated
+    jitterMode = RayCast_JitterOff
+  }
+}
+module SoSeparator {
+  internal  {
+    frame = "933 189 152 56"
+    moduleGroupName = "3D Rendering"
+  }
+  fields  {
+    instanceName = SoSeparator
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+  }
+}
+module SoView2DScene {
+  internal  {
+    frame = "1425 485 128 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "202 291 261 100"
+        sizeHint = "261 100"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoView2DScene
+    drawingOn = TRUE
+    editingOn = TRUE
+    maskValid = FALSE
+    fixZOn = TRUE
+    color = "1 1 1"
+    selectionTolerance = 4
+    needsValidVoxel = TRUE
+    button1 = PRESSED
+    button2 = IGNORED
+    button3 = IGNORED
+    shift = IGNORED
+    control = IGNORED
+    alt = IGNORED
+    wantsAllEvents = FALSE
+    wantsKeyEvents = FALSE
+    wantsMouseWheelEvents = FALSE
+    setEventHandled = FALSE
+    ignoreHandledEvents = FALSE
+    createNewMode = FALSE
+    renderOnSlab = FALSE
+    clipToSlice = TRUE
+    cursorShape = UNDEFINED_CURSOR
+    drawFilledBoundary = FALSE
+    slabSize = 20
+    slabMode = SLAB_SIZE_IN_MM
+  }
+}
+module SoSeparator {
+  internal  {
+    frame = "1565 357 184 56"
+    moduleGroupName = ""
+    windows  {
+      window _viewer {
+        geometry = "1179 246 400 402"
+        sizeHint = "400 402"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoSeparator1
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+  }
+}
+module SoGVRSlabHint {
+  internal  {
+    frame = "1293 485 120 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = SoGVRSlabHint
+    enabled = TRUE
+    enableZBuffer = FALSE
+  }
+}
+module SoOrthoView2D {
+  internal  {
+    frame = "1809 485 128 56"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "26 59 403 585"
+        sizeHint = "403 585"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoOrthoView2D
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+    worldPosition = "-7.94924020767212 -1.35757005214691 -28.755500793457"
+    blendMode = BLEND_REPLACE
+    filterMode = FILTER_LINEAR
+    lutMode = LUT_BEST
+    slab = 1
+    layoutMode = LAYOUT_ROW
+    worldPosSticky = FALSE
+    snapToCenter = FALSE
+    drawImageData = FALSE
+    alphaFactor = 1
+    baseColor = "1 1 1"
+    synchronizeZoom = TRUE
+    sliceZoom = 1
+    minSliceZoomKeyboard = 1
+    sliceOrigin1 = "-7.62939453125e-06 -3.814697265625e-06"
+    sliceOrigin2 = "0 -3.814697265625e-06"
+    sliceOrigin3 = "3.814697265625e-06 7.62939453125e-06"
+    synchronizePanning = FALSE
+    keepSlicesInView = FALSE
+    viewingCenter = "-1 -1 -1"
+    viewingCenter1 = "-7.49810981750488 -14.2763004302979 -15.8289003372192"
+    viewingCenter2 = "-2.56644010543823 -1.16958999633789 -15.8289003372192"
+    viewingCenter3 = "-2.11529994010925 -14.0882997512817 -28.755500793457"
+    invertKeyPanningDirections = FALSE
+    extraViewSpace = FALSE
+    extraViewLowerLeft = "0 0"
+    extraViewUpperRight = "1 1"
+    extraViewSize = "0.666000008583069 0.666000008583069"
+    margin = "2 2"
+    alternCubeLayout = FALSE
+    cacheMode = SLICE_CACHING_OFF
+    timePoint = 0
+    maxTimePoint = 0
+    status = "Nothing active"
+    zoomMode = VIEW2D_AUTO_ZOOM
+    zoomModeParameter = 1
+    sliceStep1 = 1
+    sliceStep2 = 1
+    sliceStep3 = 1
+    numSlices1 = 1
+    numSlices2 = 1
+    numSlices3 = 1
+    numXSlices1 = 1
+    numXSlices2 = 1
+    numXSlices3 = 1
+    synchronizeFilterMode = TRUE
+    cineCenterT = 0
+    cineIntervalT = 0
+    cineDirection = CINE_PINGPONG
+    cineRepeat = CINE_ONCE
+    cineSpeed = 0.1
+    cineFullRangeT = TRUE
+    cineAlwaysReset = TRUE
+    useGlobalInputImage = TRUE
+  }
+}
+module SoView2DSlicer {
+  internal  {
+    frame = "1557 485 120 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = SoView2DSlicer
+    drawingOn = TRUE
+    editingOn = TRUE
+    maskValid = FALSE
+    fixZOn = TRUE
+    color = "1 1 1"
+    selectionTolerance = 4
+    needsValidVoxel = FALSE
+    button1 = IGNORED
+    button2 = PRESSED
+    button3 = IGNORED
+    shift = IGNORED
+    control = IGNORED
+    alt = IGNORED
+    wantsAllEvents = FALSE
+    wantsKeyEvents = FALSE
+    wantsMouseWheelEvents = TRUE
+    setEventHandled = FALSE
+    ignoreHandledEvents = FALSE
+    createNewMode = FALSE
+    renderOnSlab = FALSE
+    clipToSlice = FALSE
+    cursorShape = MOVE_VERT_CURSOR
+    sensitivity = 0.25
+    permitInteractionOutsideImage = FALSE
+  }
+}
+module SoView2DBorder {
+  internal  {
+    frame = "1681 485 128 56"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = SoView2DBorder
+    drawingOn = TRUE
+    editingOn = TRUE
+    maskValid = TRUE
+    fixZOn = TRUE
+    color = "1 1 1"
+    selectionTolerance = 4
+    needsValidVoxel = TRUE
+    button1 = IGNORED
+    button2 = IGNORED
+    button3 = IGNORED
+    shift = IGNORED
+    control = IGNORED
+    alt = IGNORED
+    wantsAllEvents = FALSE
+    wantsKeyEvents = FALSE
+    wantsMouseWheelEvents = FALSE
+    setEventHandled = FALSE
+    ignoreHandledEvents = FALSE
+    createNewMode = FALSE
+    renderOnSlab = FALSE
+    clipToSlice = FALSE
+    cursorShape = UNDEFINED_CURSOR
+    borderWidth = 1
+    evaluateFocus = FALSE
+    focusColor = "1 1 1"
+    focusBorderWidth = 2
+  }
+}
+module SoRenderArea {
+  internal  {
+    frame = "1589 241 120 64"
+    moduleGroupName = ""
+    windows  {
+      window _viewer {
+        geometry = "66 199 400 400"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = 2d
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+    border = FALSE
+    background = "0 0 0"
+    transparency = BLEND
+    antialiasing = FALSE
+    antialiasingNumPasses = 1
+    useSampleBuffers = FALSE
+    numSamples = 8
+    grabKeyFocus = TRUE
+    snapshotFormat = SNAPSHOT_RGB
+    outputAviFile = ""
+    autoRedrawWhenRecording = TRUE
+    frameRate = 7
+    frameRateAvi = 15
+    status = ready
+    outputSnapshotFile = none
+    outputSnapshotFileWritten = none
+    autoIncreaseFile = TRUE
+    autoUpdateML = FALSE
+    showSnapshotWithShell = FALSE
+    snapCount = 0
+    inputDevicesList = ""
+  }
+}
+module itkImageFileReader {
+  internal  {
+    frame = "1057 697 144 64"
+    moduleGroupName = ""
+    windows  {
+      window _default {
+        geometry = "838 419 323 405"
+        sizeHint = "243 405"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = volume
+    fileDataType = int16
+    correctSubVoxelShift = FALSE
+    fileDimension = 3
+    info = "File closed"
+    numDims = 0
+    fileType = TypeNotApplicable
+    componentType = ""
+    pixelType = UNKNOWNPIXELTYPE
+    loaderType = ""
+    unresolvedFileName = ""
+  }
+}
+module itkImageFileReader {
+  internal  {
+    frame = "841 689 144 64"
+    moduleGroupName = ""
+  }
+  fields  {
+    instanceName = tagVolume
+    fileDataType = int16
+    correctSubVoxelShift = FALSE
+    fileDimension = 3
+    info = "Invalid path"
+    numDims = 0
+    fileType = TypeNotApplicable
+    componentType = ""
+    pixelType = UNKNOWNPIXELTYPE
+    loaderType = ""
+    unresolvedFileName = ""
+  }
+}
+module SoBackground {
+  internal  {
+    frame = "389 309 120 56"
+    moduleGroupName = "3D Rendering"
+  }
+  fields  {
+    instanceName = SoBackground
+    rotate = TRUE
+    flip = FALSE
+    on = TRUE
+    depthBuffer = TRUE
+  }
+}
+module SoExaminerViewer {
+  internal  {
+    frame = "677 173 184 56"
+    moduleGroupName = "3D Rendering"
+    windows  {
+      window _viewer {
+        geometry = "102 247 690 706"
+        sizeHint = "400 400"
+        wasOpen = no
+      }
+      window _automatic {
+        geometry = "419 367 500 600"
+        sizeHint = "260 418"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoExaminerViewer
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+    border = FALSE
+    background = "0 0 0"
+    transparency = BLEND
+    antialiasing = FALSE
+    antialiasingNumPasses = 1
+    useSampleBuffers = FALSE
+    numSamples = 8
+    grabKeyFocus = TRUE
+    snapshotFormat = SNAPSHOT_RGB
+    outputAviFile = ""
+    autoRedrawWhenRecording = TRUE
+    frameRate = 7
+    frameRateAvi = 15
+    status = ready
+    outputSnapshotFile = none
+    outputSnapshotFileWritten = none
+    autoIncreaseFile = TRUE
+    autoUpdateML = FALSE
+    showSnapshotWithShell = FALSE
+    snapCount = 0
+    inputDevicesList = ""
+    headlight = TRUE
+    decoration = TRUE
+    popupMenuEnabled = FALSE
+    viewing = TRUE
+    autoClipping = TRUE
+    drawStyle = VIEW_AS_IS
+    interactiveDrawStyle = VIEW_LOW_COMPLEXITY
+    viewAllFlag = FALSE
+    initialCameraOrientation = CAMERA_KEEP_AS_IS
+    applyCameraOrientation = CAMERA_KEEP_AS_IS
+    cameraType = CAMERA_PERSPECTIVE
+    autoApplyUserSettingOrientation = FALSE
+    userSettingOrientation = "0 0 1 0"
+    automaticViewAll = FALSE
+    storeCurrentState = TRUE
+    saveCamera = TRUE
+    cursor = TRUE
+    isCameraStored = TRUE
+    perspective = TRUE
+    stereoViewing = FALSE
+    stereoOffset = 3
+    height = 0.78539819
+    position = "168.800323486328 -73.8232040405273 270.913970947266"
+    orientation = "0.3189357817173 0.602579593658447 0.731558442115784 2.39066076278687"
+    nearDistance = 124.85983
+    farDistance = 281.3313
+    focalDistance = 217.0981
+    forceRedrawOnInteraction = FALSE
+    button1events = TO_VIEWER
+    button2events = TO_VIEWER
+    button3events = TO_VIEWER
+    keyEvents = TO_VIEWER
+    animationEnabled = FALSE
+    feedback = FALSE
+    feedbackSize = 32
+    mouseInteraction = ""
+    rotationAxis = "0 1 0"
+    rotationAngle = 360
+    rotationSteps = 80
+    rotationCurrentStep = 0
+    recordRotation = TRUE
+  }
+}
+module SoGVRTagVolume {
+  internal  {
+    frame = "829 309 136 56"
+    moduleGroupName = "3D Rendering"
+    windows  {
+      window _default {
+        geometry = "770 703 261 138"
+        sizeHint = "261 138"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoGVRTagVolume
+    enabled = TRUE
+    filterTagData = FALSE
+    scaleTagDataToLutHeight = FALSE
+  }
+}
+module SoLUTEditor {
+  internal  {
+    frame = "449 581 112 56"
+    moduleGroupName = "3D Rendering"
+    windows  {
+      window _default {
+        geometry = "831 722 568 446"
+        sizeHint = "568 446"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoLUTEditor1
+    currentColor = "1 0.380392163991928 0.0705882385373116"
+    currentOpacity = 1
+    currentPosition = 500
+    currentIndex = 1
+    rangeMin = 0
+    rangeMax = 500
+    viewMin = 0
+    viewMax = 500
+    window = 1
+    level = 0.5
+    allowNewPoints = TRUE
+    colorIsValid = TRUE
+    opacityIsValid = TRUE
+    updateLutWhileDragging = TRUE
+    relativeLut = FALSE
+    rangeInfo = [0.00,500.00]
+    viewRangeInfo = [0,500]
+    colorInterpolation = InterpolateRGB
+    colorPoints = "[ 0 0 0 0, 500 1 0.380392 0.0705882 ]"
+    alphaPoints = "[ 0 0, 500 1 ]"
+    alphaFactor = 1
+    newRangeMin = 0
+    newRangeMax = 500
+    newRangeMode = ClipFormerLUT
+    colorEditorHeight = 24
+    showColorEditor = TRUE
+    showAlphaEditor = TRUE
+    markerRadius = 4
+    selectedMarkerRadius = 6
+    snapMarkerRadius = 10
+    alphaLineWidth = 2
+    backgroundColor = "0.800000011920929 0.800000011920929 0.800000011920929"
+    borderColor = "0 0 0"
+    alphaLineColor = "0 0 0"
+    histogramColor = "0.400000005960464 0.400000005960464 0.400000005960464"
+    drawColoredMarkers = TRUE
+    markerColor = "1 1 1"
+    selectedMarkerColor = "1 0.5 0.5"
+    selectedTriangleSize = 8
+    triangleSize = 6
+    useAntiAliasing = TRUE
+  }
+}
+module SoLUTEditor {
+  internal  {
+    frame = "569 581 112 56"
+    moduleGroupName = "3D Rendering"
+    windows  {
+      window _default {
+        geometry = "1041 708 568 446"
+        sizeHint = "568 446"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoLUTEditor2
+    currentColor = "0.949019610881805 0.949019610881805 0.949019610881805"
+    currentOpacity = 1
+    currentPosition = 500
+    currentIndex = 1
+    rangeMin = 0
+    rangeMax = 500
+    viewMin = 0
+    viewMax = 500
+    window = 1
+    level = 0.5
+    allowNewPoints = TRUE
+    colorIsValid = TRUE
+    opacityIsValid = TRUE
+    updateLutWhileDragging = TRUE
+    relativeLut = FALSE
+    rangeInfo = [0.00,500.00]
+    viewRangeInfo = [0,500]
+    colorInterpolation = InterpolateRGB
+    colorPoints = "[ 0 0 0 0, 500 0.94902 0.94902 0.94902 ]"
+    alphaPoints = "[ 0 0, 500 1 ]"
+    alphaFactor = 1
+    newRangeMin = 0
+    newRangeMax = 500
+    newRangeMode = ClipFormerLUT
+    colorEditorHeight = 24
+    showColorEditor = TRUE
+    showAlphaEditor = TRUE
+    markerRadius = 4
+    selectedMarkerRadius = 6
+    snapMarkerRadius = 10
+    alphaLineWidth = 2
+    backgroundColor = "0.800000011920929 0.800000011920929 0.800000011920929"
+    borderColor = "0 0 0"
+    alphaLineColor = "0 0 0"
+    histogramColor = "0.400000005960464 0.400000005960464 0.400000005960464"
+    drawColoredMarkers = TRUE
+    markerColor = "1 1 1"
+    selectedMarkerColor = "1 0.5 0.5"
+    selectedTriangleSize = 8
+    triangleSize = 6
+    useAntiAliasing = TRUE
+  }
+}
+module LUTConcat {
+  internal  {
+    frame = "485 381 168 56"
+    moduleGroupName = "3D Rendering"
+  }
+  fields  {
+    instanceName = LUTConcat
+    lut0On = TRUE
+    lut1On = TRUE
+    lut2On = TRUE
+    lut3On = TRUE
+    lut4On = TRUE
+    lut5On = TRUE
+    concatMode = Rows
+  }
+}
+module SoMLLUT {
+  internal  {
+    frame = "525 309 88 56"
+    moduleGroupName = "3D Rendering"
+  }
+  fields  {
+    instanceName = SoMLLUT
+    acceptExtensions = FALSE
+  }
+}
+module SoGVRVolumeRenderer {
+  internal  {
+    frame = "989 309 168 56"
+    moduleGroupName = "3D Rendering"
+    windows  {
+      window _default {
+        geometry = "968 498 381 696"
+        sizeHint = "381 696"
+        wasOpen = no
+      }
+    }
+  }
+  fields  {
+    instanceName = SoGVRVolumeRenderer
+    renderCaching = AUTO
+    boundingBoxCaching = AUTO
+    renderCulling = AUTO
+    pickCulling = AUTO
+    on = TRUE
+    autoLoad = TRUE
+    interactiveQuality = 1
+    staticQuality = 1
+    interactiveSamplingRate = 0.5
+    staticSamplingRate = 1
+    blendMode = Blend
+    octreeNodeSize = NODE_SIZE_32
+    octreeParentComputationMethod = Rank
+    octreeParentComputationRank = 4
+    currentTimePoint = 0
+    maxTimePoint = 0
+    force8bit = FALSE
+    filterVolumeData = FilterLinear
+    filterLut = TRUE
+    subVolumeStartX = 0
+    subVolumeStartY = 0
+    subVolumeStartZ = 0
+    subVolumeEndX = 267
+    subVolumeEndY = 267
+    subVolumeEndZ = 455
+    zbuffer = TRUE
+    permitClipping = TRUE
+    drawOnPlanes = TRUE
+    sizeOutputX = 267
+    sizeOutputY = 267
+    sizeOutputZ = 455
+    incrementalUpdate = TRUE
+    highQualityStaticUpdate = FALSE
+    staticRenderingAfterInteractionOnly = FALSE
+    adaptQualityToWindowSize = TRUE
+    rayCastTextureStorage = RayCastTextureStorage_Auto
+    renderMode = Illuminated
+    useImageCacheFile = FALSE
+    imageCacheFilename = ""
+    greyCenter = 0.46599999
+    greyWidth = 0.41100001
+    greyInvert = FALSE
+    alphaCenter = 0.46599999
+    alphaWidth = 0.41100001
+    alphaInvert = FALSE
+    colorFactor = "1 1 1"
+    alphaFactor = 1
+    enhancementAlphaMix = 0.25
+    boundaryEnhancement = FALSE
+    boundaryEnhancementFactor = 1
+    boundaryEnhancementExponent = 1
+    boundaryEnhancementGradientBias = 0
+    silhouetteEnhancement = FALSE
+    silhouetteEnhancementExponent = 1
+    silhouetteEnhancementFactor = 1
+    toneShading = FALSE
+    toneShadingWarmColor = "0.67451000213623 0.533333003520966 0.141176000237465"
+    toneShadingColdColor = "0 0 0.400000005960464"
+    toneShadingWarmDiffuse = 0.60000002
+    toneShadingColdDiffuse = 0.2
+    toneShadingAngle = 45
+    materialAmbient = 1
+    materialDiffuse = 1
+    materialSpecular = 1
+    materialSpecularity = 32
+    reduceLightingOnLowGradientMagnitude = FALSE
+    light1Enabled = TRUE
+    light1DiffuseIntensity = 1
+    light1SpecularIntensity = 1
+    light1Color = "1 0.941175997257233 0.698038995265961"
+    light1PolarPhi = 0
+    light1PolarRho = 0
+    light2Enabled = FALSE
+    light2DiffuseIntensity = 1
+    light2SpecularIntensity = 1
+    light2Color = "1 1 1"
+    light2PolarPhi = 45
+    light2PolarRho = 45
+    light3Enabled = FALSE
+    light3DiffuseIntensity = 1
+    light3SpecularIntensity = 1
+    light3Color = "1 1 1"
+    light3PolarPhi = -45
+    light3PolarRho = 0
+    gradientQuality = GradientQualityAutomatic
+    selectionAlphaThreshold = 0.2
+    selectedPoint1 = "224.753265380859 123.560180664062 345.113220214844"
+    selectedWorldPoint1 = "54.7082099914551 -215.007690429688 263.367950439453"
+    selectionActive = TRUE
+    useWorldCoords = TRUE
+  }
+}
+connections  {
+  ChangeLUTColor3.inLUT = SoLUTEditor2.outLUT
+  ChangeLUTColor2.inLUT = SoLUTEditor2.outLUT
+  ChangeLUTColor1.inLUT = SoLUTEditor2.outLUT
+  SoSeparator.children = "SoGVRRayCastSettings1.self SoMLLUT.self SoGVRTagVolume.self SoGVRVolumeRenderer.self"
+  SoView2DScene.sceneGraph = SoSeparator.self
+  SoSeparator1.children = "SoGVRSlabHint.self SoView2DScene.self SoView2DSlicer.self SoView2DBorder.self SoOrthoView2D.self"
+  SoOrthoView2D.inputImage = volume.output0
+  2d.children = SoSeparator1.self
+  SoExaminerViewer.children = "SoBackground.self SoMLLUT.self SoGVRRayCastSettings.self SoGVRTagVolume.self SoGVRVolumeRenderer.self"
+  SoGVRTagVolume.image = tagVolume.output0
+  LUTConcat.inLUT0 = SoLUTEditor1.outLUT
+  LUTConcat.inLUT1 = ChangeLUTColor2.outLUT
+  LUTConcat.inLUT2 = ChangeLUTColor1.outLUT
+  LUTConcat.inLUT3 = ChangeLUTColor3.outLUT
+  LUTConcat.inLUT4 = ChangeLUTColor3.outLUT
+  SoMLLUT.inLUT = LUTConcat.outLUT
+  SoGVRVolumeRenderer.image = volume.output0
+}
+networkModel  {
+  parentItems  {
+    0  {
+      MLABNetworkModelItem MLABNetworkModelItemGroup {
+        uniqueId = 33
+        objectName = "3D Rendering"
+        parentUniqueId = 0
+        frame = "364 98 966 564"
+        color  {
+          r = 45
+          g = 226
+          b = 226
+          a = 40
+        }
+      }
+    }
+  }
+}
